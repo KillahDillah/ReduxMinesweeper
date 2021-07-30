@@ -1,6 +1,6 @@
 import { Dropdown } from "./components/header/Dropdown";
 import { Gamestats } from "./components/header/Gamestats";
-// import { Gameboard } from "./components/Gameboard";
+import { Gameboard } from "./components/Gameboard";
 import { HeaderNav } from "./components/header/HeaderNav";
 
 const App = () => {
@@ -11,6 +11,7 @@ const App = () => {
         <Gamestats />
         <HeaderNav />
       </header>
+      <Gameboard />
     </div>
   );
 };

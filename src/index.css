@@ -16,6 +16,7 @@ code {
   width: 500px;
   height: 500px;
   margin: 0 auto;
+  border: 2px solid gray;
 }
 
 .App header {
@@ -33,4 +34,8 @@ code {
 
 .header > div {
   padding-left: 10px;
+}
+
+.board {
+  padding: 10px;
 }
