@@ -1,32 +1,18 @@
-import { Gameboard } from "./components/Gameboard";
-import store from "./store/store";
+import { Dropdown } from "./components/header/Dropdown";
+import { Gamestats } from "./components/header/Gamestats";
+// import { Gameboard } from "./components/Gameboard";
+import { HeaderNav } from "./components/header/HeaderNav";
 
-function App() {
-  const LevelDropdown = () => {
-    function changeLevel(e) {
-      store.dispatch({
-        type: "MINES",
-        mines: e.target.value,
-      });
-    }
-    return (
-      <select onChange={(e) => changeLevel(e)}>
-        <option value={10}>Easy</option>
-        <option value={15}>Medium</option>
-        <option value={20}>Hard</option>
-      </select>
-    );
-  };
-
+const App = () => {
   return (
     <div className="App">
       <header>
-        <div>Minesweeper</div>
-        <LevelDropdown />
+        <Dropdown />
+        <Gamestats />
+        <HeaderNav />
       </header>
-      <Gameboard />
     </div>
   );
-}
+};
 
 export default App;
