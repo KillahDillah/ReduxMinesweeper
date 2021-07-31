@@ -14,7 +14,7 @@ code {
 
 .App {
   width: 500px;
-  height: 500px;
+  height: auto;
   margin: 0 auto;
   border: 2px solid gray;
 }
@@ -37,5 +37,22 @@ code {
 }
 
 .board {
-  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #dcd6bc;
+  border: 10px solid #dcd6bc;
+}
+
+.empty {
+  border: 1px dotted red;
+  height: 30px;
+  width: 30px;
+  box-sizing: border-box;
+}
+
+.mine {
+  border: 1px solid blue;
+  height: 30px;
+  width: 30px;
+  box-sizing: border-box;
 }
