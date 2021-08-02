@@ -18,6 +18,7 @@ const createBoard = (mines) => {
 const initialState = {
   mines: 10,
   squares: createBoard(10),
+  flags: 0,
 };
 
 export default function rootReducer(state = initialState, action) {
@@ -29,6 +30,12 @@ export default function rootReducer(state = initialState, action) {
         mines: action.mines,
         squares: createBoard(action.mines),
       };
+    case "SET_FLAGS": {
+      return {
+        ...state,
+        flags: action.flags,
+      };
+    }
     default:
       return state;
   }
