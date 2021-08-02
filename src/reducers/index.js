@@ -1,28 +1,3 @@
-// import { combineReducers } from "redux";
-// // import { mines } from "./mines";
-// // import { squaresState } from "./squares";
-
-// const rootReducer = combineReducers({
-//   mines: (state = 10, action) => {
-//     if (action.type === "SET_MINES") {
-//       state = action.mines;
-//       console.log(state, "set mines");
-//       return state;
-//     }
-//     return state;
-//   },
-//   squares: (state = [], action) => {
-//     if (action.type === "SET_SQUARES") {
-//       // state = action
-//       console.log(action, "squares in reducer");
-//       // return state;
-//     }
-//     return state;
-//   },
-// });
-
-// export default rootReducer;
-
 const createBoard = (mines) => {
   console.log(mines, "in createBoard");
   const width = 16;
