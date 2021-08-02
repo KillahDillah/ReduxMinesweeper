@@ -8,8 +8,6 @@ const App = () => {
   const mines = useSelector((state) => state.mines);
   const squares = useSelector((state) => state.squares);
 
-  console.log(mines, squares.length, "in app");
-
   return (
     <div className="App">
       <header>

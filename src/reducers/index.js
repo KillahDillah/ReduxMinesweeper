@@ -1,9 +1,7 @@
 const createBoard = (mines) => {
-  console.log(mines, "in createBoard");
   const width = 16;
   let squares = [];
   const minesArray = new Array(Number(mines)).fill("mine");
-  console.log(minesArray, "mines in create board");
   const emptyArray = new Array(width * width - mines).fill("empty");
   const gameArray = emptyArray.concat(minesArray);
   const boardArray = gameArray.sort(() => Math.random() - 0.5);
@@ -24,7 +22,6 @@ const initialState = {
 export default function rootReducer(state = initialState, action) {
   switch (action.type) {
     case "SET_MINES":
-      console.log(action.mines, "in reducer");
       return {
         ...state,
         mines: action.mines,
