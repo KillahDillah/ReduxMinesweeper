@@ -2,9 +2,7 @@ import { Dropdown } from "./components/header/Dropdown";
 import { Gamestats } from "./components/header/Gamestats";
 import { Gameboard } from "./components/Gameboard";
 import { HeaderNav } from "./components/header/HeaderNav";
-import { useSelector, useStore, useDispatch } from "react-redux";
-import Square from "./components/Square";
-import { setSquares } from "./actions";
+import { useSelector } from "react-redux";
 
 const App = () => {
   const mines = useSelector((state) => state.mines);
