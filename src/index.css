@@ -39,6 +39,7 @@ code {
 .board {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   background-color: #dcd6bc;
   border: 10px solid #dcd6bc;
 }
